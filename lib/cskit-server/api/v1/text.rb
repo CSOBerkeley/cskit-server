@@ -22,7 +22,7 @@ module CSKit
               citations.split("|").each do |citation|
                 space = citation.index(" ")
                 volume = citation[0..space].strip.to_sym
-                citation = citation[space..-1]
+                citation = citation[space..-1].strip
                 enum.yield(volume, citation)
               end
             end

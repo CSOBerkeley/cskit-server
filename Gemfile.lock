@@ -1,4 +1,28 @@
 GIT
+  remote: git://github.com/camertron/cskit-biblekjv-rb.git
+  revision: 116bba118f98a3e78756ec8622839601710459b1
+  specs:
+    cskit-biblekjv (1.0.0)
+      cskit (~> 1.0.0)
+      json
+
+GIT
+  remote: git://github.com/camertron/cskit-rb.git
+  revision: 5a93dd14385f817288413a4bec8c51763873ce4c
+  specs:
+    cskit (1.0.0)
+      json
+      treetop
+
+GIT
+  remote: git://github.com/camertron/cskit-shkts-rb.git
+  revision: e3ec100780b3b7b0833acc641cd553d09f3a50a5
+  specs:
+    cskit-shkts (1.0.0)
+      cskit (~> 1.0.0)
+      json
+
+GIT
   remote: git://github.com/camertron/grape.git
   revision: cae92de854e50cd4edf55a35c4c573ba4fda8b3b
   specs:
@@ -12,27 +36,6 @@ GIT
       rack-accept
       rack-mount
       virtus
-
-PATH
-  remote: ~/workspace/cskit-biblekjv-rb
-  specs:
-    cskit-biblekjv (1.0.0)
-      cskit (~> 1.0.0)
-      json
-
-PATH
-  remote: ~/workspace/cskit-rb
-  specs:
-    cskit (1.0.0)
-      json
-      treetop
-
-PATH
-  remote: ~/workspace/cskit-shkts-rb
-  specs:
-    cskit-shkts (1.0.0)
-      cskit (~> 1.0.0)
-      json
 
 GEM
   remote: https://rubygems.org/

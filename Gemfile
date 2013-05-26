@@ -5,9 +5,9 @@ gem "json", "~> 1.8.0"
 gem "rack-contrib", "~> 1.1.0"
 gem "grape", :github => "camertron/grape"
 
-gem "cskit", :github => "camertron/cskit-rb"
-gem "cskit-biblekjv", :github => "camertron/cskit-biblekjv-rb"
-gem "cskit-shkts", :github => "camertron/cskit-shkts-rb"
+gem "cskit", :github => "camertron/cskit-rb", :branch => "master"
+gem "cskit-biblekjv", :github => "camertron/cskit-biblekjv-rb", :branch => "master"
+gem "cskit-shkts", :github => "camertron/cskit-shkts-rb", :branch => "master"
 
 group :development do
   gem "pry"

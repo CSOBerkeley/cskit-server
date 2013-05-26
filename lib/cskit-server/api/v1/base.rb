@@ -15,6 +15,7 @@ module CSKit
         default_format :json
 
         mount CSKit::Api::V1::LessonEndpoints => "/"
+        mount CSKit::Api::V1::TextEndpoints => "/"
 
       end
     end

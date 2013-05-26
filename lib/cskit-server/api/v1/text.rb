@@ -39,10 +39,11 @@ module CSKit
             volume = CSKit.get_volume(volume_name)
             citation = volume.parse_citation(citation_text)
             readings = volume.readings_for(citation)
+            formatter = formatters[volume.config[:type]]
 
             { :volume => volume.config[:id],
               :citation => citation,
-              :text => formatters[volume_name].format_readings(readings)
+              :text => formatter.format_readings(readings)
             }
           end
         end

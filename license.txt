@@ -1,0 +1,1 @@
+cskit-server will always be free, opensource and available under the GPL, currently GPLV2 (see gpl-2.0.txt). We remain the right to upgrade the GPL version or dual-license the code to projects with incompatible licenses to ensure compatibility.

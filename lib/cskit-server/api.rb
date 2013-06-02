@@ -1,5 +1,8 @@
 # encoding: UTF-8
 
+require 'cskit-server/ext/kernel'
+require 'cskit-server/ext/rack'
+
 require 'grape'
 
 require 'cskit'

@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/camertron/cskit-rb.git
-  revision: d1bc5b82769a44a59649c9e7c04de190f05d15c0
+  revision: 920604955c31283c5401c3aabdf337421be18eeb
   branch: master
   specs:
     cskit (1.0.0)
@@ -73,7 +73,7 @@ GEM
     rack-mount (0.8.3)
       rack (>= 1.0.0)
     slop (3.4.3)
-    treetop (1.4.12)
+    treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
     virtus (0.5.4)

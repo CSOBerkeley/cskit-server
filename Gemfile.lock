@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/camertron/cskit-rb.git
-  revision: 920604955c31283c5401c3aabdf337421be18eeb
+  revision: c5fa2176a9795dbcf70481f43ecd1135eb7ff70d
   branch: master
   specs:
     cskit (1.0.0)

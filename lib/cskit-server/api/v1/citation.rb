@@ -1,7 +1,5 @@
 # encoding: UTF-8
 
-require 'pry-nav'
-
 module CSKit
   module Api
     module V1

@@ -1,5 +1,5 @@
 GIT
-  remote: git://github.com/camertron/cskit-biblekjv-rb.git
+  remote: git://github.com/CSOBerkeley/cskit-biblekjv-rb.git
   revision: 116bba118f98a3e78756ec8622839601710459b1
   branch: master
   specs:
@@ -8,8 +8,8 @@ GIT
       json
 
 GIT
-  remote: git://github.com/camertron/cskit-rb.git
-  revision: c5fa2176a9795dbcf70481f43ecd1135eb7ff70d
+  remote: git://github.com/CSOBerkeley/cskit-rb.git
+  revision: 7a22da801467e2eee9841e0617377a7a826f29f7
   branch: master
   specs:
     cskit (1.0.0)
@@ -17,7 +17,7 @@ GIT
       treetop
 
 GIT
-  remote: git://github.com/camertron/cskit-shkts-rb.git
+  remote: git://github.com/CSOBerkeley/cskit-shkts-rb.git
   revision: e3ec100780b3b7b0833acc641cd553d09f3a50a5
   branch: master
   specs:

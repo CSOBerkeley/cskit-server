@@ -11,11 +11,12 @@ module CSKit
         use Rack::JSONP
 
         version 'v1', :using => :path
-        # rescue_from :all
+        rescue_from :all
         default_format :json
 
         mount CSKit::Api::V1::LessonEndpoints => "/"
         mount CSKit::Api::V1::TextEndpoints => "/"
+        mount CSKit::Api::V1::CitationEndpoints => "/"
 
       end
     end

@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/CSOBerkeley/cskit-rb.git
-  revision: 7a22da801467e2eee9841e0617377a7a826f29f7
+  revision: e3f2139b6915c3bfce47770926767f37fbbb4bae
   branch: master
   specs:
     cskit (1.0.0)
@@ -46,18 +46,18 @@ GEM
     activesupport (3.2.13)
       i18n (= 0.6.1)
       multi_json (~> 1.0)
-    backports (2.6.7)
-    builder (3.2.0)
+    backports (3.3.2)
+    builder (3.2.2)
     coderay (1.0.9)
     descendants_tracker (0.0.1)
     hashie (2.0.5)
     i18n (0.6.1)
     json (1.8.0)
     method_source (0.8.1)
-    multi_json (1.7.3)
-    multi_xml (0.5.3)
+    multi_json (1.7.7)
+    multi_xml (0.5.4)
     polyglot (0.3.3)
-    pry (0.9.12)
+    pry (0.9.12.2)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
       slop (~> 3.4)
@@ -72,12 +72,12 @@ GEM
       rack (>= 0.9.1)
     rack-mount (0.8.3)
       rack (>= 1.0.0)
-    slop (3.4.3)
+    slop (3.4.5)
     treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
-    virtus (0.5.4)
-      backports (~> 2.6.1)
+    virtus (0.5.5)
+      backports (~> 3.3)
       descendants_tracker (~> 0.0.1)
 
 PLATFORMS

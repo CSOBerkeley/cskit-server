@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/CSOBerkeley/cskit-biblekjv-rb.git
-  revision: 116bba118f98a3e78756ec8622839601710459b1
+  revision: fb40f27a071fa17d5353df7903dc1ecb9214ac6a
   branch: master
   specs:
     cskit-biblekjv (1.0.0)
@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: git://github.com/CSOBerkeley/cskit-rb.git
-  revision: e3f2139b6915c3bfce47770926767f37fbbb4bae
+  revision: 6592ee4d3e943de3285e2f4cca3f2990d9b74dfd
   branch: master
   specs:
     cskit (1.0.0)
@@ -22,6 +22,15 @@ GIT
   branch: master
   specs:
     cskit-shkts (1.0.0)
+      cskit (~> 1.0.0)
+      json
+
+GIT
+  remote: git://github.com/camertron/cskit-strongs-rb.git
+  revision: fa2ec925e94f064415d2c0c2535b1acc4bd9f3dd
+  branch: master
+  specs:
+    cskit-strongs (1.0.1)
       cskit (~> 1.0.0)
       json
 
@@ -87,6 +96,7 @@ DEPENDENCIES
   cskit!
   cskit-biblekjv!
   cskit-shkts!
+  cskit-strongs!
   grape!
   json (~> 1.8.0)
   pry

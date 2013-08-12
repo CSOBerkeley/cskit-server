@@ -18,6 +18,14 @@ module CSKit
           optional :text_format, {
             :type => String
           }
+
+          optional :annotator, {
+            :type => String
+          }
+
+          optional :annotation_format, {
+            :type => String
+          }
         end
 
         helpers do
@@ -32,6 +40,9 @@ module CSKit
             end
           end
 
+          # This is horrible. It would be much better if gems could register their own formatters.
+          # We could then provide access to them via a get_formatter method in CSKit.
+          # That's how annotators do it, anyway.
           def formatter_for(volume, type)
             type_str = type.to_s.split("_").map(&:capitalize).join
             namespace_str = volume.config[:type].to_s.split("_").map(&:capitalize).join
@@ -48,9 +59,28 @@ module CSKit
             readings = volume.readings_for(citation)
             formatter = formatter_for(volume, params[:text_format] || "plain_text")
 
-            { :volume => volume.config[:id],
+            text = if params[:annotator]
+              annotator = CSKit.get_annotator(params[:annotator].to_sym)
+              annotation_formatter = annotator.get_formatter(params[:annotation_format].to_sym).new
+
+              annotated_readings = readings.map do |reading|
+                annotator.annotate(reading, volume)
+              end
+
+              formatter.format_annotated_readings(
+                annotated_readings,
+                annotation_formatter
+              )
+            else
+              formatter.format_readings(readings)
+            end
+
+            header 'Content-Type', 'application/json; charset=utf-8'
+
+            {
+              :volume => volume.config[:id],
               :citation => citation,
-              :text => formatter.format_readings(readings)
+              :text => text
             }
           end
         end

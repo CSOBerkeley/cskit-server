@@ -8,6 +8,7 @@ require 'grape'
 require 'cskit'
 require 'cskit/bible/kjv'
 require 'cskit/science_health'
+require 'cskit/concordances/strongs'
 require 'cskit-server/api/v1'
 
 module CSKit

@@ -8,6 +8,7 @@ gem "grape", :github => "camertron/grape"
 gem "cskit", :github => "CSOBerkeley/cskit-rb", :branch => "master"
 gem "cskit-biblekjv", :github => "CSOBerkeley/cskit-biblekjv-rb", :branch => "master"
 gem "cskit-shkts", :github => "CSOBerkeley/cskit-shkts-rb", :branch => "master"
+gem "cskit-strongs", :github => "camertron/cskit-strongs-rb", :branch => "master"
 
 group :development do
   gem "pry"

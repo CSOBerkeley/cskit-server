@@ -27,7 +27,7 @@ GIT
 
 GIT
   remote: git://github.com/camertron/cskit-strongs-rb.git
-  revision: fa2ec925e94f064415d2c0c2535b1acc4bd9f3dd
+  revision: 989b54f168cf4ecb950142b050a4f538c681cb21
   branch: master
   specs:
     cskit-strongs (1.0.1)

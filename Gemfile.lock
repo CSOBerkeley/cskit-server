@@ -119,6 +119,3 @@ DEPENDENCIES
   pry-nav
   puma (~> 2.0.1)
   rack-contrib (~> 1.1.0)
-
-BUNDLED WITH
-   1.11.2

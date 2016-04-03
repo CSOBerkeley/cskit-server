@@ -9,19 +9,19 @@ GIT
 
 GIT
   remote: git://github.com/CSOBerkeley/cskit-rb.git
-  revision: 6592ee4d3e943de3285e2f4cca3f2990d9b74dfd
+  revision: 80932d125b2167333d16c700f33090207f802488
   branch: master
   specs:
-    cskit (1.0.0)
+    cskit (1.0.1)
       json
       treetop
 
 GIT
   remote: git://github.com/CSOBerkeley/cskit-shkts-rb.git
-  revision: e3ec100780b3b7b0833acc641cd553d09f3a50a5
+  revision: 41fc883db98122c05e8d49083eb8e6bb1a46cb75
   branch: master
   specs:
-    cskit-shkts (1.0.0)
+    cskit-shkts (1.0.1)
       cskit (~> 1.0.0)
       json
 
@@ -52,42 +52,58 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (3.2.13)
-      i18n (= 0.6.1)
-      multi_json (~> 1.0)
-    backports (3.3.2)
+    activesupport (4.2.6)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
     builder (3.2.2)
-    coderay (1.0.9)
-    descendants_tracker (0.0.1)
-    hashie (2.0.5)
-    i18n (0.6.1)
-    json (1.8.0)
-    method_source (0.8.1)
-    multi_json (1.7.7)
-    multi_xml (0.5.4)
-    polyglot (0.3.3)
-    pry (0.9.12.2)
-      coderay (~> 1.0.5)
-      method_source (~> 0.8)
+    coderay (1.1.1)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    equalizer (0.0.11)
+    hashie (3.4.3)
+    i18n (0.7.0)
+    ice_nine (0.11.2)
+    json (1.8.3)
+    method_source (0.8.2)
+    minitest (5.8.4)
+    multi_json (1.11.2)
+    multi_xml (0.5.5)
+    polyglot (0.3.5)
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
       slop (~> 3.4)
-    pry-nav (0.2.3)
-      pry (~> 0.9.10)
+    pry-nav (0.2.4)
+      pry (>= 0.9.10, < 0.11.0)
     puma (2.0.1)
       rack (>= 1.1, < 2.0)
-    rack (1.5.2)
+    rack (1.6.4)
     rack-accept (0.4.5)
       rack (>= 0.4)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
     rack-mount (0.8.3)
       rack (>= 1.0.0)
-    slop (3.4.5)
-    treetop (1.4.14)
-      polyglot
-      polyglot (>= 0.3.1)
-    virtus (0.5.5)
-      backports (~> 3.3)
-      descendants_tracker (~> 0.0.1)
+    slop (3.6.0)
+    thread_safe (0.3.5)
+    treetop (1.6.5)
+      polyglot (~> 0.3)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
   ruby
@@ -103,3 +119,6 @@ DEPENDENCIES
   pry-nav
   puma (~> 2.0.1)
   rack-contrib (~> 1.1.0)
+
+BUNDLED WITH
+   1.11.2

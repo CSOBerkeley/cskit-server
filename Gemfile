@@ -1,17 +1,17 @@
-source "https://rubygems.org"
-ruby '1.9.3'
+source 'https://rubygems.org'
+ruby '2.4.2'
 
-gem "puma", "~> 2.0.1"
-gem "json", "~> 1.8.0"
-gem "rack-contrib", "~> 1.1.0"
-gem "grape", "~> 0.9.0"
+gem 'puma', '~> 3.0'
+gem 'json', '~> 1.8'
+gem 'rack-contrib', '~> 1.1.0'
+gem 'grape', '~> 0.9.0'
 
-gem "cskit", :github => "CSOBerkeley/cskit-rb", :branch => "master"
-gem "cskit-biblekjv", :github => "CSOBerkeley/cskit-biblekjv-rb", :branch => "master"
-gem "cskit-shkts", :github => "CSOBerkeley/cskit-shkts-rb", :branch => "master"
-gem "cskit-strongs", :github => "camertron/cskit-strongs-rb", :branch => "master"
+gem 'cskit', '~> 1.2'
+gem 'cskit-biblekjv', '~> 2.0'
+gem 'cskit-shkts', '~> 2.1'
+gem 'cskit-strongs', '~> 1.0'
 
 group :development do
-  gem "pry"
-  gem "pry-nav"
+  gem 'pry'
+  gem 'pry-byebug'
 end

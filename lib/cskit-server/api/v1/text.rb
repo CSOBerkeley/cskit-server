@@ -78,9 +78,9 @@ module CSKit
             header 'Content-Type', 'application/json; charset=utf-8'
 
             {
-              :volume => volume.config[:id],
-              :citation => citation,
-              :text => text
+              volume: volume.config[:id],
+              citation: citation,
+              text: text
             }
           end
         end

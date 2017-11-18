@@ -1,39 +1,3 @@
-GIT
-  remote: git://github.com/CSOBerkeley/cskit-biblekjv-rb.git
-  revision: fb40f27a071fa17d5353df7903dc1ecb9214ac6a
-  branch: master
-  specs:
-    cskit-biblekjv (1.0.0)
-      cskit (~> 1.0.0)
-      json
-
-GIT
-  remote: git://github.com/CSOBerkeley/cskit-rb.git
-  revision: 80932d125b2167333d16c700f33090207f802488
-  branch: master
-  specs:
-    cskit (1.0.1)
-      json
-      treetop
-
-GIT
-  remote: git://github.com/CSOBerkeley/cskit-shkts-rb.git
-  revision: 41fc883db98122c05e8d49083eb8e6bb1a46cb75
-  branch: master
-  specs:
-    cskit-shkts (1.0.1)
-      cskit (~> 1.0.0)
-      json
-
-GIT
-  remote: git://github.com/camertron/cskit-strongs-rb.git
-  revision: 989b54f168cf4ecb950142b050a4f538c681cb21
-  branch: master
-  specs:
-    cskit-strongs (1.0.1)
-      cskit (~> 1.0.0)
-      json
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -48,9 +12,22 @@ GEM
       ice_nine (~> 0.11.0)
       thread_safe (~> 0.3, >= 0.3.1)
     builder (3.2.2)
+    byebug (9.1.0)
     coderay (1.1.1)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
+    cskit (1.2.0)
+      json
+    cskit-biblekjv (2.0.1)
+      cskit (~> 1.1)
+      json
+    cskit-shkts (2.1.0)
+      cskit (~> 1.1)
+      json
+    cskit-strongs (1.0.2)
+      cskit (~> 1.1)
+      cskit-biblekjv (~> 2.0)
+      json
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
     equalizer (0.0.11)
@@ -67,20 +44,19 @@ GEM
     hashie (3.4.3)
     i18n (0.7.0)
     ice_nine (0.11.2)
-    json (1.8.3)
+    json (1.8.6)
     method_source (0.8.2)
     minitest (5.8.4)
     multi_json (1.11.2)
     multi_xml (0.5.5)
-    polyglot (0.3.5)
     pry (0.10.3)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    pry-nav (0.2.4)
-      pry (>= 0.9.10, < 0.11.0)
-    puma (2.0.1)
-      rack (>= 1.1, < 2.0)
+    pry-byebug (3.5.0)
+      byebug (~> 9.1)
+      pry (~> 0.10)
+    puma (3.10.0)
     rack (1.6.4)
     rack-accept (0.4.5)
       rack (>= 0.4)
@@ -90,8 +66,6 @@ GEM
       rack (>= 1.0.0)
     slop (3.6.0)
     thread_safe (0.3.5)
-    treetop (1.6.5)
-      polyglot (~> 0.3)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     virtus (1.0.5)
@@ -104,13 +78,19 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cskit!
-  cskit-biblekjv!
-  cskit-shkts!
-  cskit-strongs!
+  cskit (~> 1.2)
+  cskit-biblekjv (~> 2.0)
+  cskit-shkts (~> 2.1)
+  cskit-strongs (~> 1.0)
   grape (~> 0.9.0)
-  json (~> 1.8.0)
+  json (~> 1.8)
   pry
-  pry-nav
-  puma (~> 2.0.1)
+  pry-byebug
+  puma (~> 3.0)
   rack-contrib (~> 1.1.0)
+
+RUBY VERSION
+   ruby 2.4.2p198
+
+BUNDLED WITH
+   1.15.4

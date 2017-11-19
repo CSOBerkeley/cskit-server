@@ -16,7 +16,7 @@ GEM
     coderay (1.1.1)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
-    cskit (1.2.0)
+    cskit (1.2.1)
       json
     cskit-biblekjv (2.0.1)
       cskit (~> 1.1)
